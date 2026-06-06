@@ -1,0 +1,57 @@
+Work Item Type,Title,Parent,Description
+Epic,Engagement Discovery & Roadmap,,Define the client background current state target state roadmap success metrics and risks
+Feature,Document Client Current State,Engagement Discovery & Roadmap,Document data sources reporting pain points stakeholder concerns and current delivery gaps
+User Story,Document current data environment,Document Client Current State,As an executive sponsor I want the current data environment documented so leadership understands pain points risks and priorities
+Task,Review source system landscape,Document current data environment,Review current source systems and document business function data type and known issues
+Task,Document reporting pain points,Document current data environment,Capture current reporting challenges and manual processes
+Feature,Define Target-State Roadmap,Engagement Discovery & Roadmap,Define target architecture delivery phases success metrics and modernization roadmap
+User Story,Define Azure data modernization roadmap,Define Target-State Roadmap,As an executive sponsor I want a target-state Azure data roadmap so the organization has a clear modernization path
+Task,Define target architecture,Define Azure data modernization roadmap,Document the high-level target-state Azure architecture
+
+Epic,Azure Data Platform Foundation,,Establish secure and cost-controlled Azure foundation for the data platform
+Feature,Establish Azure Landing Zone for Data Platform,Azure Data Platform Foundation,Define Azure foundation naming conventions environments access and cost controls
+User Story,Define secure Azure foundation,Establish Azure Landing Zone for Data Platform,As a data engineering team member I want a secure Azure foundation so services can be deployed consistently and safely
+Task,Define resource group naming convention,Define secure Azure foundation,Document naming standards for Azure resources
+Task,Define cost-control approach,Define secure Azure foundation,Document budget alerts cleanup policy and cost monitoring approach
+
+Epic,Batch Data Ingestion,,Ingest core business reference data into the data lake
+Feature,Ingest Core Reference Data,Batch Data Ingestion,Ingest customers products stores and inventory into Bronze layer
+User Story,Ingest customer product store and inventory data,Ingest Core Reference Data,As a BI analyst I want core reference data ingested so trusted reporting models can be built
+Task,Define batch source schemas,Ingest customer product store and inventory data,Document fields data types and keys for batch datasets
+Task,Create sample CSV datasets,Ingest customer product store and inventory data,Create realistic sample batch datasets
+
+Epic,Real-Time Streaming Pipeline,,Capture order and fulfillment events in near real time
+Feature,Ingest Order Events,Real-Time Streaming Pipeline,Configure Event Hubs and producer for real-time order events
+User Story,Capture order events in near real time,Ingest Order Events,As an operations manager I want order events captured in near real time so fulfillment activity can be monitored
+Task,Define order event schema,Capture order events in near real time,Document order event fields and event types
+Task,Create Python event producer,Capture order events in near real time,Build script to generate and publish sample order events
+
+Epic,Data Modeling & Transformation,,Create curated Silver and Gold layers for analytics
+Feature,Build Silver and Gold Data Layers,Data Modeling & Transformation,Create cleaned standardized and business-ready data layers
+User Story,Build curated data layers,Build Silver and Gold Data Layers,As a BI developer I want cleaned and curated data so reports use trusted datasets
+Task,Define Bronze Silver Gold standards,Build curated data layers,Document standards for each data layer
+Task,Document transformation rules,Build curated data layers,Define cleaning standardization and business rules
+
+Epic,Power BI Reporting,,Define and build executive and operational dashboards
+Feature,Executive Dashboard Requirements,Power BI Reporting,Define KPIs wireframe semantic model and refresh strategy
+User Story,Define executive dashboard,Executive Dashboard Requirements,As an executive stakeholder I want a dashboard showing revenue orders fulfillment and inventory KPIs
+Task,Define executive KPIs,Define executive dashboard,Document KPIs formulas and business definitions
+Task,Define dashboard wireframe,Define executive dashboard,Sketch report pages visuals and filters
+
+Epic,Governance & Data Quality,,Define data governance access quality lineage and ownership
+Feature,Define Data Quality Rules,Governance & Data Quality,Document validation rules and remediation process
+User Story,Document data quality rules,Define Data Quality Rules,As a governance stakeholder I want data quality rules documented so issues are detected early
+Task,Define required field checks,Document data quality rules,Document mandatory fields for each dataset
+Task,Define duplicate checks,Document data quality rules,Document uniqueness and duplicate detection rules
+
+Epic,Operational Monitoring & Handoff,,Create monitoring alerting runbook and support handoff
+Feature,Create Support Runbook,Operational Monitoring & Handoff,Document operational support and incident process
+User Story,Create operational support runbook,Create Support Runbook,As a support team member I want a runbook so issues can be handled consistently
+Task,Define monitoring requirements,Create operational support runbook,Document pipeline and data quality monitoring requirements
+Task,Document escalation process,Create operational support runbook,Define owner notification and escalation path
+
+Epic,AI/ML Readiness Strategy,,Prioritize future analytics AI and LLM use cases
+Feature,Identify AI/ML Use Cases,AI/ML Readiness Strategy,Identify practical AI ML and LLM use cases after data foundation is stable
+User Story,Prioritize AI and ML use cases,Identify AI/ML Use Cases,As an executive sponsor I want AI ML use cases prioritized for practical governed investment
+Task,Identify demand forecasting use case,Prioritize AI and ML use cases,Document business value data needs and risks
+Task,Identify LLM reporting assistant use case,Prioritize AI and ML use cases,Document RAG and governed natural language analytics concept
