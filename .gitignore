@@ -1,0 +1,12 @@
+.env
+.env.*
+*.pem
+*.key
+secrets.json
+connection_strings.json
+service_principal_credentials.json
+storage_account_keys.txt
+eventhub_connection_string.txt
+terraform.tfvars
+*.tfstate
+*.tfstate.*
